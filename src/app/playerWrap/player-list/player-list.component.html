@@ -1,0 +1,13 @@
+<div *ngFor="let player of players;" class="row">
+    <div class="col-xs-12">
+        <a class="clearfix list-group-item" routerLink='{{player.id}}'>
+            <div class="pull-left">
+                <h4>{{player.fullName}}</h4>
+                <p>({{player.squadNumber}})</p>
+            </div>
+            <span class="pull-right">
+                <img src="{{player.pictureUrl}}" alt="" class="img-responsive" style="max-height: 50px">
+            </span>
+        </a>
+    </div>
+</div>

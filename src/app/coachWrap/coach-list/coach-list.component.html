@@ -1,0 +1,13 @@
+<div *ngFor="let coach of coaches;" class="row">
+    <div class="col-xs-12">
+        <a class="clearfix list-group-item" routerLink='{{coach.id}}'>
+            <div class="pull-left">
+                <h4>{{coach.fullName}}</h4>
+                <p>({{coach.position}})</p>
+            </div>
+            <span class="pull-right">
+                <img src="{{coach.pictureUrl}}" alt="" class="img-responsive" style="max-height: 50px">
+            </span>
+        </a>
+    </div>
+</div>
